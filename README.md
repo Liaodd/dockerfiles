@@ -22,3 +22,7 @@ $ docker run -i -t liaodd/ubuntu /bin/bash
 ### php (施工中)
 
 从`ubuntu_mirror`构建一个php开发环境
+
+```shell
+$ docker run -d -p 80:80 liaodd/php
+```
