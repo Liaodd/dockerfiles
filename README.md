@@ -19,6 +19,6 @@ $ docker run -i -t liaodd/ubuntu /bin/bash
 
 从官方`ubuntu 14.04`构建一个镜像，并且把apt镜像设置为来自网易的镜像，提高速度
 
-### php
+### php (施工中)
 
 从`ubuntu_mirror`构建一个php开发环境

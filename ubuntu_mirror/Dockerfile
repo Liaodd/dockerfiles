@@ -1,4 +1,7 @@
 from ubuntu:14.04
+
+MAINTAINER Liaodd, sglicx23@gmail.com
+
 run mv /etc/apt/sources.list /etc/apt/sources.list_bak \
 && echo deb http://mirrors.163.com/ubuntu/ trusty main restricted universe multiverse >> /etc/apt/sources.list \
 && echo deb http://mirrors.163.com/ubuntu/ trusty-security main restricted universe multiverse >> /etc/apt/sources.list \
