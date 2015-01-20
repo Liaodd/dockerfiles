@@ -1,4 +1,4 @@
-# dockerfiles
+# Dockerfiles
 
 ## 基本命令
 
@@ -15,25 +15,47 @@ $ docker run -i -t liaodd/ubuntu /bin/bash
 
 ## Base Image
 
-### ubuntu_mirror 
+### ubuntu_mirror (ubuntu 14.04)
 
 从官方`ubuntu 14.04`构建一个镜像，并且把apt源设置为来自网易的镜像，提高速度。安装了后面依赖的supervisor
 
 ## App
 
-### php
+### php (5.5)
 
-从`ubuntu_mirror`构建一个php开发环境。
+从`ubuntu_mirror`构建一个`php 5.5`开发环境。
 
 使用下列命令启动环境
 
 ```shell
+$ cd php
+
+$ docker build -t liaodd/php .
+
 $ docker run -v /path/to/local/web/files:/app/web/default:rw -d -p 80:80 liaodd/php
 
-# 在boot2docker中，可以使用如下命令访问
+# 在boot2docker中，可以使用命令获取vm的ip
+# 在主机通过浏览器输入以上的ip即可访问到boot2docker中的80端口
+$ boot2docker ip
+```
+
+### php53 (5.3)
+
+从`ubuntu_mirror`构建一个`php 5.3`开发环境。
+
+使用下列命令启动环境
+
+```shell
+$ cd php53
+
+$ docker build -t liaodd/php53 .
+
+$ docker run -v /path/to/local/web/files:/app/web/default:rw -d -p 80:80 liaodd/php53
+
+# 在boot2docker中，可以使用命令获取vm的ip
+# 在主机通过浏览器输入以上的ip即可访问到boot2docker中的80端口
 $ boot2docker ip
 
-# 在主机通过浏览器输入以上的ip即可访问到boot2docker中的80端口
 ```
 
 ## 官方资源
