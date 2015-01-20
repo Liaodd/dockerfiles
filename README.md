@@ -17,7 +17,7 @@ $ docker run -i -t liaodd/ubuntu /bin/bash
 
 ### ubuntu_mirror 
 
-从官方`ubuntu 14.04`构建一个镜像，并且把apt镜像设置为来自网易的镜像，提高速度
+从官方`ubuntu 14.04`构建一个镜像，并且把apt源设置为来自网易的镜像，提高速度。安装了后面依赖的supervisor
 
 ## App
 
@@ -35,3 +35,19 @@ $ boot2docker ip
 
 # 在主机通过浏览器输入以上的ip即可访问到boot2docker中的80端口
 ```
+
+## 官方资源
+
+* [官方文档](http://docs.docker.com/)
+
+## 官方以外的资源
+
+### boot2docker 下载
+
+* [百度盘](http://pan.baidu.com/s/1sjDKI7b) 
+
+### 文章资源
+
+* [Tanky Woo's blog: Docker 4 -- 总结](http://blog.tankywoo.com/docker/2014/05/08/docker-4-summary.html)
+
+* [allengaller's list: Docker](http://segmentfault.com/bookmark/1230000000759382)
