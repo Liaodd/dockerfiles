@@ -58,6 +58,25 @@ $ boot2docker ip
 
 ```
 
+### nodejs
+
+从`ubuntu_mirror`构建一个`nodejs`开发环境。
+
+使用下列命令启动环境
+
+```shell
+$ cd nodejs
+
+$ docker build -t liaodd/nodejs .
+
+$ docker run -v /path/to/local/web/files:/app/web/default:rw -d -p 80:80 liaodd/nodejs
+
+# 在boot2docker中，可以使用命令获取vm的ip
+# 在主机通过浏览器输入以上的ip即可访问到boot2docker中的80端口
+$ boot2docker ip
+
+```
+
 ## 官方资源
 
 * [官方文档](http://docs.docker.com/)
