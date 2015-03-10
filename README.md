@@ -85,13 +85,13 @@ $ boot2docker ip
 
 ### boot2docker 下载
 
-* [百度盘](http://pan.baidu.com/s/1sjDKI7b) 
+* [百度盘](http://pan.baidu.com/s/1sjDKI7b)
 
 ### 文章资源
 
 * [Tanky Woo's blog: Docker 4 -- 总结](http://blog.tankywoo.com/docker/2014/05/08/docker-4-summary.html)
 
-* [allengaller's list: Docker](http://segmentfault.com/bookmark/1230000000759382)
+* [allengaller's list: Docker](http://segmentfault.net/bookmark/1230000000759382)
 
 ### images 镜像（mirror）
 
